@@ -1,0 +1,95 @@
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 6rem 1rem 0 1rem;
+  }
+
+  main,
+  footer {
+    padding: 0 1rem;
+  }
+
+  .center__section {
+    @include alignCenter;
+  }
+
+  div.flex__row {
+    @include alignCenter;
+  }
+
+  .flex__row.logos {
+    @include alignCenter;
+  }
+
+  footer.flex__row {
+    @include alignCenter;
+  }
+
+  div.links.flex__row {
+    @include alignCenter;
+    width: 100%;
+    gap: 0;
+    & div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  div.socials.flex__row {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    & img {
+      width: 100%;
+    }
+  }
+
+  .devices {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  div.center,
+  section.center {
+    width: 100%;
+    align-items: center;
+  }
+
+  .flex__row div.center {
+    width: 100%;
+  }
+
+  .flex__row.logos {
+    gap: 5rem;
+  }
+
+  .download {
+    margin: 1rem 0.5rem;
+    padding: 1rem 4rem;
+  }
+
+  div.logo {
+    margin-top: 4rem;
+    @include alignCenter;
+  }
+
+  .download__buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex__column {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url(../../../images/bg-header-mobile.png);
+  }
+}

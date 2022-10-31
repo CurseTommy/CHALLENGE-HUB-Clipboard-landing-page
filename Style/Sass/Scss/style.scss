@@ -1,0 +1,184 @@
+@import "_variables";
+@import "_mixins";
+@import "_responsiveness";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header {
+  @include alignCenter;
+  background-image: url(../../../images/bg-header-desktop.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 8rem;
+}
+
+main {
+  @include alignCenter;
+}
+
+footer.flex__row {
+  justify-content: space-around;
+  padding: 0;
+  background-color: rgb(250, 250, 250);
+  & img {
+    width: 50%;
+  }
+}
+
+div.links.flex__row {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  & p {
+    color: $dark-grayish-blue;
+    font-size: 1.2rem;
+    line-height: 3rem;
+
+    &:hover {
+      color: $strong-cyan;
+      cursor: pointer;
+    }
+  }
+}
+
+div.socials.flex__row {
+  padding-left: 8rem;
+}
+
+.heading__image {
+  margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  color: $dark-grayish-blue;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.47rem;
+}
+
+p {
+  color: $grayish-blue;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.gap {
+  width: 100vw;
+  height: 7rem;
+}
+
+.center {
+  @include alignCenter;
+  width: 53.5%;
+  text-align: center;
+}
+
+.center__section {
+  display: flex;
+  gap: 5rem;
+}
+
+.alignLeft {
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 3rem;
+  & p {
+    font-size: 1rem;
+  }
+}
+
+.flex__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex__row {
+  @include alignCenter;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 4rem 0;
+  & p {
+    font-size: 1rem;
+  }
+
+  & div.center {
+    width: 25%;
+  }
+}
+
+.flex__row__img {
+  margin-bottom: 2rem;
+}
+
+.logos {
+  gap: 7rem;
+}
+
+.footer__section {
+  width: 100%;
+}
+
+.download {
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 1rem 0.5rem;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mac {
+  background-color: $light-blue;
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+.ios {
+  background-color: $strong-cyan;
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+.social:hover {
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
