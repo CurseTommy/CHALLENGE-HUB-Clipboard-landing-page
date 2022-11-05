@@ -57,7 +57,7 @@
     align-items: center;
   }
 
-  .flex__row div.center {
+  div.flex__row div.center {
     width: 100%;
   }
 
@@ -84,6 +84,14 @@
   }
 
   .flex__column {
+    align-items: center;
+  }
+
+  footer div.socials.flex__row {
+    padding-left: 0;
+  }
+
+  footer div.flex__column {
     align-items: center;
   }
 }
